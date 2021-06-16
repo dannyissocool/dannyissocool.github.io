@@ -1,0 +1,76 @@
+.contact-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+}
+
+.contact-header {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: underline;
+}
+
+.contact-links {
+  width: 100%;
+  margin: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.contact-links li {
+  border: 1px solid white;
+  outline: 1px solid black;
+  background-color: transparent;
+  -webkit-transition: 0.2s outline-offset ease;
+  transition: 0.2s outline-offset ease;
+  margin: 0 10px;
+  padding: 0;
+  text-align: center;
+}
+
+.contact-links li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px 20px;
+  line-break: loose;
+}
+
+.contact-links a:hover,
+.contact-links li:hover,
+.contact-links i:hover {
+  color: #00ccff;
+  outline-offset: -2px;
+}
+
+@media screen and (max-width: 900px) {
+  .contact-links {
+    display: block;
+  }
+  .contact-links li {
+    margin: 5px 0;
+  }
+  .contact-links li a {
+    display: block;
+  }
+}
+/*# sourceMappingURL=Contact.css.map */

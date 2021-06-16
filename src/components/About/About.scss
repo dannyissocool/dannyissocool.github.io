@@ -1,0 +1,101 @@
+.about {
+  margin: 50px 0;
+  padding: 50px 0;
+
+  .header {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .icon-cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 50px;
+
+    .icon-card {
+      text-align: center;
+      margin: 20px;
+      padding: 20px 10px;
+
+      .icon {
+        margin: 0;
+
+        border: 1px solid #444;
+      }
+    }
+
+    .icon-card:hover {
+      .icon {
+        color: white;
+        background-color: #444;
+      }
+    }
+
+    .card-header {
+      font-family: 'Poppins', sans-serif;
+    }
+  }
+}
+
+.biography {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: 20px 80px;
+  margin-bottom: 50px;
+  background-color: #444;
+
+  .image {
+    min-width: 200px;
+    max-width: 400px;
+    min-height: 100px;
+    max-height: 400px;
+    object-fit: contain;
+    margin: 20px 50px;
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+
+  p {
+    padding: 0 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .icon-cards {
+    flex-direction: column;
+    margin: 0 auto;
+
+    .icon-card {
+      margin: 50px;
+    }
+
+    .icon-card:first-of-type {
+      margin: 0 auto;
+    }
+  }
+
+  .biography {
+    padding: 30px;
+    flex-direction: column;
+
+    .image {
+      min-width: 100px;
+      max-height: 300px;
+    }
+
+    p {
+      padding: 20px;
+      text-align: center;
+    }
+  }
+}

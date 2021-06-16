@@ -1,0 +1,71 @@
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
+  -webkit-transition: 2s all ease;
+  transition: 2s all ease;
+  opacity: 0;
+}
+
+.hero .hero-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px;
+  text-align: center;
+}
+
+.hero .hero-title h1,
+.hero .hero-title h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero .hero-title .btn {
+  margin: 20px;
+}
+
+.hero img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50%;
+  margin: 0px 0px 20px 0;
+  min-width: 100px;
+  min-height: 100px;
+  max-height: 300px;
+  z-index: 1;
+  border: 2px solid black;
+}
+
+.hero.active {
+  opacity: 1;
+}
+
+@media screen and (max-width: 750px) {
+  .hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero img {
+    max-width: 400px;
+  }
+}
+/*# sourceMappingURL=Hero.css.map */

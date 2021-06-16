@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.projects-section {
+  background-color: #444;
+  height: auto;
+  padding: 50px 0;
+
+  .header {
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+}
