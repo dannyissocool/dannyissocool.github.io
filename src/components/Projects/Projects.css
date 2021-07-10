@@ -9,11 +9,23 @@
   background-color: #444;
   height: auto;
   padding: 50px 0;
+  width: 100%;
 }
 
 .projects-section .header {
   color: white;
   text-align: center;
   font-family: 'Poppins', sans-serif;
+}
+
+.projects-section .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
 }
 /*# sourceMappingURL=Projects.css.map */

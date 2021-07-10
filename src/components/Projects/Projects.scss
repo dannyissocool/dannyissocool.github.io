@@ -8,10 +8,17 @@
   background-color: #444;
   height: auto;
   padding: 50px 0;
+  width: 100%;
 
   .header {
     color: white;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }

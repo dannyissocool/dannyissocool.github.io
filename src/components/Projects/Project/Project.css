@@ -1,0 +1,21 @@
+.project #img {
+  margin: auto 0;
+}
+
+.project #header {
+  color: #f7eeee;
+}
+
+.project #desc {
+  color: #f7eeee;
+  letter-spacing: 1px;
+}
+
+.project #link {
+  color: royalblue;
+}
+
+.project #link:hover {
+  color: #96adf1;
+}
+/*# sourceMappingURL=Project.css.map */
