@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-semantic-portfolio/static/css/main.c74ddff8.chunk.css",
-    "main.js": "/react-semantic-portfolio/static/js/main.7de97750.chunk.js",
-    "main.js.map": "/react-semantic-portfolio/static/js/main.7de97750.chunk.js.map",
+    "main.css": "/react-semantic-portfolio/static/css/main.66709c5a.chunk.css",
+    "main.js": "/react-semantic-portfolio/static/js/main.763e6fad.chunk.js",
+    "main.js.map": "/react-semantic-portfolio/static/js/main.763e6fad.chunk.js.map",
     "runtime-main.js": "/react-semantic-portfolio/static/js/runtime-main.19c4ece7.js",
     "runtime-main.js.map": "/react-semantic-portfolio/static/js/runtime-main.19c4ece7.js.map",
     "static/css/2.7289d674.chunk.css": "/react-semantic-portfolio/static/css/2.7289d674.chunk.css",
-    "static/js/2.af034522.chunk.js": "/react-semantic-portfolio/static/js/2.af034522.chunk.js",
-    "static/js/2.af034522.chunk.js.map": "/react-semantic-portfolio/static/js/2.af034522.chunk.js.map",
+    "static/js/2.2ae01fc6.chunk.js": "/react-semantic-portfolio/static/js/2.2ae01fc6.chunk.js",
+    "static/js/2.2ae01fc6.chunk.js.map": "/react-semantic-portfolio/static/js/2.2ae01fc6.chunk.js.map",
     "index.html": "/react-semantic-portfolio/index.html",
     "static/css/2.7289d674.chunk.css.map": "/react-semantic-portfolio/static/css/2.7289d674.chunk.css.map",
-    "static/css/main.c74ddff8.chunk.css.map": "/react-semantic-portfolio/static/css/main.c74ddff8.chunk.css.map",
-    "static/js/2.af034522.chunk.js.LICENSE.txt": "/react-semantic-portfolio/static/js/2.af034522.chunk.js.LICENSE.txt",
+    "static/css/main.66709c5a.chunk.css.map": "/react-semantic-portfolio/static/css/main.66709c5a.chunk.css.map",
+    "static/js/2.2ae01fc6.chunk.js.LICENSE.txt": "/react-semantic-portfolio/static/js/2.2ae01fc6.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/react-semantic-portfolio/static/media/outline-icons.ddae9b1b.woff",
     "static/media/danpug.98c52d4a.jpg": "/react-semantic-portfolio/static/media/danpug.98c52d4a.jpg",
     "static/media/selfie1.1334db41.jpg": "/react-semantic-portfolio/static/media/selfie1.1334db41.jpg"
@@ -19,8 +19,8 @@
   "entrypoints": [
     "static/js/runtime-main.19c4ece7.js",
     "static/css/2.7289d674.chunk.css",
-    "static/js/2.af034522.chunk.js",
-    "static/css/main.c74ddff8.chunk.css",
-    "static/js/main.7de97750.chunk.js"
+    "static/js/2.2ae01fc6.chunk.js",
+    "static/css/main.66709c5a.chunk.css",
+    "static/js/main.763e6fad.chunk.js"
   ]
 }
