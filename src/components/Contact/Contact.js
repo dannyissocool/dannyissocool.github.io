@@ -39,7 +39,7 @@ const Contact = () => {
         </li>
       </ul>
 
-      <iframe
+      {/* <iframe
         className='map'
         width='600'
         height='450'
@@ -47,7 +47,7 @@ const Contact = () => {
         loading='lazy'
         src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_PORTFOLIO_GOOGLE_MAP_TOKEN}&zoom=11
             &q=Portland+OR`}
-      ></iframe>
+      ></iframe> */}
 
       <h3>I live in Portland.</h3>
     </div>
