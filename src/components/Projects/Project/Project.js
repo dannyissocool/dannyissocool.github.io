@@ -22,9 +22,14 @@ const Project = () => {
             obcaecati quam numquam natus, debitis ab est consectetur, officiis
           </p>
         </Item.Description>
-        <Item.Extra id='link' as='a' href='https://github.com/dannyissocool'>
-          Additional Details
-        </Item.Extra>
+        <div className='links'>
+          <Item.Extra id='link' as='a' href='https://github.com/dannyissocool'>
+            Github Repo
+          </Item.Extra>
+          <Item.Extra id='link' as='a' href='https://github.com/dannyissocool'>
+            Live on Github Pages
+          </Item.Extra>
+        </div>
       </Item.Content>
     </Item>
   );

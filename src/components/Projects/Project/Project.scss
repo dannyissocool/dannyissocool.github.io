@@ -13,10 +13,39 @@
   }
 
   #link {
-    color: royalblue;
+    color: rgb(93, 130, 243);
+    width: auto;
+    margin-right: 20px;
+  }
+
+  .links {
+    display: flex;
+    width: 100%;
   }
 
   #link:hover {
     color: rgb(150, 173, 241);
   }
+}
+
+@media (max-width: 770px) {
+  .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    #header {
+      margin-top: 10px;
+    }
+
+    .links {
+      display: block;
+    }
+  }
+
+  // .project {
+  //   display: block;
+  // }
 }

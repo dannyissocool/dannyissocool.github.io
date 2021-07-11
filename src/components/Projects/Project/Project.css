@@ -12,10 +12,44 @@
 }
 
 .project #link {
-  color: royalblue;
+  color: #5d82f3;
+  width: auto;
+  margin-right: 20px;
+}
+
+.project .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
 .project #link:hover {
   color: #96adf1;
+}
+
+@media (max-width: 770px) {
+  .project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .project #header {
+    margin-top: 10px;
+  }
+  .project .links {
+    display: block;
+  }
 }
 /*# sourceMappingURL=Project.css.map */

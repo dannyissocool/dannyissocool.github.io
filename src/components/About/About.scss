@@ -1,6 +1,6 @@
 .about {
-  margin: 50px 0;
-  padding: 50px 0;
+  margin: 0;
+  padding: 0;
 
   .header {
     font-family: 'Poppins', sans-serif;
@@ -20,6 +20,10 @@
       text-align: center;
       margin: 20px;
       padding: 20px 10px;
+
+      .list {
+        text-align: start;
+      }
 
       .icon {
         margin: 0;
@@ -73,14 +77,13 @@
 @media screen and (max-width: 750px) {
   .icon-cards {
     flex-direction: column;
-    margin: 0 auto;
-
     .icon-card {
-      margin: 50px;
-    }
-
-    .icon-card:first-of-type {
+      width: 100%;
       margin: 0 auto;
+
+      .list {
+        text-align: center !important;
+      }
     }
   }
 

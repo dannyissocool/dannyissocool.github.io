@@ -11,9 +11,8 @@ const About = () => {
       <section className='biography'>
         <img src={Img} className='image' />
         <p>
-          Thank you for visiting my website! My name is Danny Meuse and I am a
-          Junior Web Developer. I am looking forward to expanding my skills in
-          this growing industry and learning from on-the-job experience.
+          My name is Danny Meuse and I am a Junior Web Developer. I am looking
+          forward to expanding my skills and building cooler and cooler stuff.
         </p>
       </section>
       <Container>
@@ -27,7 +26,7 @@ const About = () => {
               React. I am focusing on front end-development but am working
               towards becoming a full-stack developer.
             </p> */}
-            <List as='ul' style={{ textAlign: 'left' }}>
+            <List as='ul' className='list'>
               <List.Item as='li'>HTML</List.Item>
               <List.Item as='li'>
                 CSS, SCSS, Semantic-UI, Tailwind-CSS
@@ -38,20 +37,12 @@ const About = () => {
           <div className='icon-card'>
             <Icon name='paint brush' className='icon' size='big' circular />
             <h2 className='card-header'>Web Design</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-              architecto placeat ea veritatis ex? Dolores nemo non architecto
-              eum nobis. Repellendus tempora cupiditate ex consequatur debitis
-            </p>
+            <p>Adobe Photoshop, Illustrator, GIMP, Figma</p>
           </div>
           <div className='icon-card'>
             <Icon name='youtube play' className='icon' size='big' circular />
             <h2 className='card-header'>Photo/Video Editing</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-              architecto placeat ea veritatis ex? Dolores nemo non architecto
-              eum nobis. Repellendus tempora cupiditate ex consequatur debitis
-            </p>
+            <p>Adobe Premier, Final Cut Pro</p>
           </div>
         </section>
       </Container>
