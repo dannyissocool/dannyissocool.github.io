@@ -1,3 +1,12 @@
+.background {
+  position: relative;
+  height: 100vh;
+  background-image: url("./buffalo.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,50 +17,39 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 90vh;
-  -webkit-transition: 2s all ease;
-  transition: 2s all ease;
+  -webkit-transition: 2s all ease-in-out;
+  transition: 2s all ease-in-out;
   opacity: 0;
+  height: 100vh;
 }
 
-.hero .hero-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 50px;
-  text-align: center;
+.hero .text-and-button {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-.hero .hero-title h1,
-.hero .hero-title h2 {
-  font-family: 'Poppins', sans-serif;
+.hero .text-and-button h1,
+.hero .text-and-button h2 {
+  color: white;
 }
 
-.hero .hero-title .btn {
-  margin: 20px;
+.hero .text-and-button .btn {
+  margin: 0 auto;
+  width: 100%;
 }
 
-.hero img {
-  -o-object-fit: contain;
-     object-fit: contain;
+.hero .hero-image {
   border-radius: 50%;
-  margin: 0px 0px 20px 0;
   min-width: 100px;
+  max-width: 600px;
   min-height: 100px;
   max-height: 600px;
-  max-width: 600px;
-  z-index: 1;
-  border: 2px solid black;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 20px;
+  border: 3px solid white;
 }
 
 .hero.active {
@@ -65,8 +63,8 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .hero img {
-    max-width: 400px;
+  .hero .text-and-button {
+    text-align: center;
   }
 }
 /*# sourceMappingURL=Hero.css.map */

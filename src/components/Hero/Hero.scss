@@ -1,50 +1,61 @@
+.background {
+  position: relative;
+  height: 100vh;
+
+  background-image: url('./buffalo.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
-  transition: 2s all ease;
-  opacity: 0;
+  transition: 2s all ease-in-out;
 
-  .hero-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    text-align: center;
+  opacity: 0;
+  height: 100vh;
+
+  .text-and-button {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
 
     h1,
     h2 {
-      font-family: 'Poppins', sans-serif;
+      color: white;
     }
 
     .btn {
-      margin: 20px;
+      margin: 0 auto;
+      width: 100%;
     }
   }
 
-  img {
-    object-fit: contain;
+  .hero-image {
     border-radius: 50%;
-    margin: 0px 0px 20px 0;
     min-width: 100px;
+    max-width: 600px;
     min-height: 100px;
     max-height: 600px;
-    max-width: 600px;
-    z-index: 1;
-    border: 2px solid black;
+    object-fit: contain;
+    margin: 20px;
+    border: 3px solid white;
   }
 }
+
 .hero.active {
   opacity: 1;
 }
+
 @media screen and (max-width: 750px) {
   .hero {
     flex-direction: column;
 
-    img {
-      max-width: 400px;
+    .text-and-button {
+      text-align: center;
     }
   }
 }

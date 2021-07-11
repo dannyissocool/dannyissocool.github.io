@@ -1,3 +1,7 @@
+.grid-base-level {
+  padding: 0;
+}
+
 .side-bar {
   position: fixed;
   display: flex;
@@ -11,6 +15,8 @@
   transition: 0.3s all ease;
   opacity: 0;
   z-index: 10;
+
+  padding: 0;
 }
 
 .side-bar-links {

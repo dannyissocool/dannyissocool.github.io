@@ -21,7 +21,7 @@ const SideBar = () => {
   };
 
   return (
-    <Grid columns={1}>
+    <Grid className='grid-base-level' columns={1}>
       <Grid.Column>
         <Menu
           onClick={handleClick}
@@ -41,7 +41,9 @@ const SideBar = () => {
                 setOpen(!open);
               }}
               className='side-bar-link'
-            />
+            >
+              About Me
+            </Menu.Item>
             <Menu.Item
               name='Portfolio'
               as={Link}

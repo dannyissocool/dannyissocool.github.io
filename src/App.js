@@ -19,7 +19,7 @@ function App() {
         <SideBar />
       </NavBarProvider>
       <Hero />
-      <Divider />
+
       <About />
       <Divider />
       <Projects />
