@@ -3,7 +3,6 @@ import { Image, Container, Button, Header } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import './Hero.css';
 import Selfie from './selfie1.jpg';
-import Buffalo from './buffalo.JPG';
 
 const Hero = () => {
   const [appear, setAppear] = useState(false);

@@ -1,10 +1,12 @@
 .background {
   position: relative;
   height: 100vh;
-  background-image: url("./buffalo.JPG");
+  background-image: url("./buffalo_small.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .background::before {
