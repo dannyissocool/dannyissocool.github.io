@@ -1,7 +1,7 @@
 .background {
   position: relative;
   height: 100vh;
-  background-image: url("./buffalo_small.jpg");
+  background-image: url("./mountain_small.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -95,6 +95,9 @@
   }
   .hero .text-and-button {
     text-align: center;
+  }
+  .hero .hero-image {
+    margin: 50px;
   }
 }
 /*# sourceMappingURL=Hero.css.map */

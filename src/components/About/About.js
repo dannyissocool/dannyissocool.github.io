@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Header, Icon, Image, Container, List } from 'semantic-ui-react';
 import './About.css';
 import Img from './danpug.jpg';
 
-const About = () => {
+const About = ({ onScreen, setOnScreen }) => {
+  useEffect(() => {
+    console.log('effect ran');
+  }, []);
+
   return (
     <div className='about' id='about'>
       <h1 className='header'>About Me</h1>

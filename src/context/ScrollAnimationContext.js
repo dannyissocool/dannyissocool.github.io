@@ -5,8 +5,6 @@ export const ScrollAnimationContext = createContext();
 export const ScrollAnimationProvider = ({ children }) => {
   const [onScreen, setOnScreen] = useState(false);
 
-  useEffect(() => {});
-
   return (
     <ScrollAnimationContext.Provider value={{ onScreen, setOnScreen }}>
       {children}
