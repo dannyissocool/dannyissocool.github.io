@@ -55,6 +55,10 @@
   letter-spacing: 1px;
 }
 
+.hero .text-and-button:hover {
+  background-color: transparent;
+}
+
 .hero .hero-image {
   border-radius: 50%;
   min-width: 100px;

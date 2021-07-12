@@ -8,33 +8,36 @@ const Contact = () => {
       <h1 className='contact-header'>Contact</h1>
       <ul className='contact-links'>
         <li>
-          <a href='#'>
+          <a href='mailto:danny.meuse@gmail.com' target='_blank'>
             <Icon name='mail' />
             Gmail
           </a>
         </li>
         <li>
-          <a href='#'>
+          <a href='https://www.github.com/dannyissocool' target='_blank'>
             <Icon name='github' />
             Github
           </a>
         </li>
         <li>
-          <a href='#'>
+          <a href='https://twitter.com/DannyMeuse' target='_blank'>
             <Icon name='twitter' />
             Twitter
           </a>
         </li>
         <li>
-          <a href='#'>
+          <a href='https://instagram.com/dmeuse/' target='_blank'>
             <Icon name='instagram' />
             Instagram
           </a>
         </li>
         <li>
-          <a href='#'>
-            <Icon name='facebook official' />
-            Facebook
+          <a
+            href='https://www.linkedin.com/in/daniel-meuse-a28079a6/'
+            target='_blank'
+          >
+            <Icon name='linkedin' />
+            LinkedIn
           </a>
         </li>
       </ul>
