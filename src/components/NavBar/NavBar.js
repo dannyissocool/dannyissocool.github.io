@@ -38,8 +38,10 @@ const NavBar = () => {
           to='/'
           className='logo'
           onClick={() => {
-            let hero = document.getElementById('hero');
-            hero && hero.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth',
+            });
           }}
           header
         >
