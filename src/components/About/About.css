@@ -1,68 +1,50 @@
 .about {
-  margin: 0;
-  padding: 0;
+  margin-bottom: -20px;
+  background-color: #86a7ca;
 }
 
 .about .header {
   font-family: 'Poppins', sans-serif;
   font-size: 35px;
   text-align: center;
-  margin: 100px;
+  background-color: white;
+  padding: 100px;
 }
 
-.about .icon-cards {
+.about .biography {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin: 20px;
-}
-
-.about .icon-cards .icon-card {
-  text-align: center;
-  margin: 20px;
-  padding: 20px 10px;
-}
-
-.about .icon-cards .icon-card .list {
-  text-align: start;
-}
-
-.about .icon-cards .icon-card .icon {
-  margin: 0;
-  border: 1px solid #444;
-}
-
-.about .icon-cards .icon-card:hover .icon {
-  color: white;
-  background-color: #444;
-}
-
-.about .icon-cards .card-header {
-  font-family: 'Poppins', sans-serif;
-}
-
-.biography {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 80px;
-  margin-bottom: 50px;
+  margin-top: -15px;
+  padding: 100px 80px;
   background-color: #444;
 }
 
-.biography .image {
+.about .biography #bio-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(-2000px);
+          transform: translateX(-2000px);
+  opacity: 0;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.about .biography #bio-contents .image {
   min-width: 200px;
   max-width: 400px;
   min-height: 100px;
@@ -72,14 +54,107 @@
   margin: 20px 50px;
   border: 2px solid white;
   border-radius: 10px;
+  z-index: 2;
 }
 
-.biography p {
+.about .biography #bio-contents p {
   padding: 0 20px;
+  line-height: 2.5;
+  letter-spacing: 1px;
   color: white;
   font-size: 15px;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
+  z-index: 2;
+}
+
+.about .biography #bio-contents.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+.about .icon-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px;
+  padding: 100px 0;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.about .icon-cards .icon-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-width: 300px;
+  height: 250px;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.about .icon-cards .icon-card h2 {
+  color: white;
+}
+
+.about .icon-cards .icon-card .list {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  color: #e6e4e4;
+  letter-spacing: 1px;
+  list-style-type: none;
+}
+
+.about .icon-cards .icon-card .icon {
+  margin: 0;
+  color: white;
+  border: 1px solid white;
+}
+
+.about .icon-cards .icon-card:hover {
+  background-color: transparent;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.about .icon-cards .icon-card:hover p,
+.about .icon-cards .icon-card:hover h2,
+.about .icon-cards .icon-card:hover .item,
+.about .icon-cards .icon-card:hover .icon {
+  color: #444;
+}
+
+.about .icon-cards .icon-card:hover .icon {
+  border: 1px solid #444;
+}
+
+.about .icon-cards .card-header {
+  font-family: 'Poppins', sans-serif;
+  color: white;
 }
 
 @media screen and (max-width: 750px) {
@@ -90,24 +165,26 @@
             flex-direction: column;
   }
   .icon-cards .icon-card {
-    width: 100%;
     margin: 0 auto;
+    height: auto !important;
   }
   .icon-cards .icon-card .list {
     text-align: center !important;
   }
   .biography {
     padding: 30px;
+  }
+  .biography .bio-contents {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .biography .image {
+  .biography .bio-contents .image {
     min-width: 100px;
     max-height: 300px;
   }
-  .biography p {
+  .biography .bio-contents p {
     padding: 20px;
     text-align: center;
   }

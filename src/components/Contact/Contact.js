@@ -5,34 +5,51 @@ import './Contact.css';
 const Contact = () => {
   return (
     <div className='contact-section' id='contact'>
-      <h1 className='contact-header'>Contact</h1>
+      <h1 className='contact-header'>Contact Me</h1>
       <ul className='contact-links'>
         <li>
-          <a href='mailto:danny.meuse@gmail.com' target='_blank'>
+          <a
+            href='mailto:danny.meuse@gmail.com'
+            rel='noreferrer'
+            target='_blank'
+          >
             <Icon name='mail' />
             Gmail
           </a>
         </li>
         <li>
-          <a href='https://www.github.com/dannyissocool' target='_blank'>
+          <a
+            href='https://www.github.com/dannyissocool'
+            rel='noreferrer'
+            target='_blank'
+          >
             <Icon name='github' />
             Github
           </a>
         </li>
         <li>
-          <a href='https://twitter.com/DannyMeuse' target='_blank'>
+          <a
+            href='https://twitter.com/DannyMeuse'
+            rel='noreferrer'
+            target='_blank'
+          >
             <Icon name='twitter' />
             Twitter
           </a>
         </li>
         <li>
-          <a href='https://instagram.com/dmeuse/' target='_blank'>
+          <a
+            href='https://instagram.com/dmeuse/'
+            rel='noreferrer'
+            target='_blank'
+          >
             <Icon name='instagram' />
             Instagram
           </a>
         </li>
         <li>
           <a
+            rel='noreferrer'
             href='https://www.linkedin.com/in/daniel-meuse-a28079a6/'
             target='_blank'
           >

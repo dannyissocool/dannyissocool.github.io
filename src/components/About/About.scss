@@ -1,76 +1,126 @@
 .about {
-  margin: 0;
-  padding: 0;
+  margin-bottom: -20px;
+  background-color: #86a7ca;
 
   .header {
     font-family: 'Poppins', sans-serif;
     font-size: 35px;
 
     text-align: center;
-    margin: 100px;
+    background-color: white;
+    padding: 100px;
+  }
+  .biography {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15px;
+    padding: 100px 80px;
+    background-color: #444;
+
+    #bio-contents {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      transform: translateX(-2000px);
+      opacity: 0;
+      transition: 0.5s all ease;
+
+      .image {
+        min-width: 200px;
+        max-width: 400px;
+        min-height: 100px;
+        max-height: 400px;
+        object-fit: contain;
+        margin: 20px 50px;
+        border: 2px solid white;
+        border-radius: 10px;
+        z-index: 2;
+      }
+
+      p {
+        padding: 0 20px;
+        line-height: 2.5;
+        letter-spacing: 1px;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        z-index: 2;
+      }
+    }
+
+    #bio-contents.active {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 
   .icon-cards {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
     margin: 20px;
+    padding: 100px 0;
+    transition: 0.2s all ease;
 
     .icon-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
       text-align: center;
+      min-width: 300px;
+      height: 250px;
       margin: 20px;
-      padding: 20px 10px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+      transition: 0.3s all ease;
+
+      h2 {
+        color: white;
+      }
 
       .list {
-        text-align: start;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+        color: rgb(230, 228, 228);
+        letter-spacing: 1px;
+        list-style-type: none;
       }
 
       .icon {
         margin: 0;
-
-        border: 1px solid #444;
+        color: white;
+        border: 1px solid white;
       }
     }
 
     .icon-card:hover {
+      background-color: transparent;
+      transition: 0.3s all ease;
+
+      p,
+      h2,
+      .item,
       .icon {
-        color: white;
-        background-color: #444;
+        color: #444;
+      }
+
+      .icon {
+        border: 1px solid #444;
       }
     }
 
     .card-header {
       font-family: 'Poppins', sans-serif;
+      color: white;
     }
-  }
-}
-
-.biography {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-
-  padding: 20px 80px;
-  margin-bottom: 50px;
-  background-color: #444;
-
-  .image {
-    min-width: 200px;
-    max-width: 400px;
-    min-height: 100px;
-    max-height: 400px;
-    object-fit: contain;
-    margin: 20px 50px;
-    border: 2px solid white;
-    border-radius: 10px;
-  }
-
-  p {
-    padding: 0 20px;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
   }
 }
 
@@ -78,8 +128,8 @@
   .icon-cards {
     flex-direction: column;
     .icon-card {
-      width: 100%;
       margin: 0 auto;
+      height: auto !important;
 
       .list {
         text-align: center !important;
@@ -89,16 +139,17 @@
 
   .biography {
     padding: 30px;
-    flex-direction: column;
+    .bio-contents {
+      flex-direction: column;
+      .image {
+        min-width: 100px;
+        max-height: 300px;
+      }
 
-    .image {
-      min-width: 100px;
-      max-height: 300px;
-    }
-
-    p {
-      padding: 20px;
-      text-align: center;
+      p {
+        padding: 20px;
+        text-align: center;
+      }
     }
   }
 }

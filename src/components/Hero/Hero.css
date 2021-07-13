@@ -50,6 +50,7 @@
 .hero .text-and-button h1,
 .hero .text-and-button h2 {
   color: #fafafa;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hero .text-and-button .btn {

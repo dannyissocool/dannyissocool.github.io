@@ -19,7 +19,7 @@ const Hero = () => {
               <Header as='h1'>Hello there...</Header>
               <Header as='h2'>
                 I'm Danny. <br />
-                Welcome to my website{' '}
+                I'm a Frontend Developer. <br />
               </Header>
 
               <Button

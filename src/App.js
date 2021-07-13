@@ -7,6 +7,7 @@ import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import { NavBarProvider } from './context/NavBarContext';
+import { ScrollAnimationProvider } from './context/ScrollAnimationContext';
 import { Divider } from 'semantic-ui-react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
@@ -18,13 +19,16 @@ function App() {
         <NavBar />
         <SideBar />
       </NavBarProvider>
-      <Hero />
+      <ScrollAnimationProvider>
+        <Hero />
 
-      <About />
-      <Divider />
-      <Projects />
-      <Contact />
-      <Divider />
+        <About />
+
+        <Projects />
+        <Contact />
+        <Divider />
+      </ScrollAnimationProvider>
+
       <Footer />
     </Router>
   );
