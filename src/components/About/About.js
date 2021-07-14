@@ -7,7 +7,7 @@ import Img from './danpug.jpg';
 const About = () => {
   const { onScreen, setOnScreen } = useContext(ScrollAnimationContext);
 
-  // Biography Animation
+  // Biography Slide-In Animation
   useEffect(() => {
     function showElem(entryArray) {
       let bioContainer = document.querySelector('#bio-contents');
@@ -19,22 +19,28 @@ const About = () => {
     observer.observe(document.querySelector('#bio'));
   });
 
-  // Biography Cards animation
+  // Biography Cards Opacity animation
   useEffect(() => {
-    function showElem(entryArray) {
-      const cards = document.querySelectorAll('.icon-card');
-      const cardArray = Array.from(cards);
-      console.log(cardArray);
-      console.log(entryArray[0].isIntersecting);
+    let cards = document.querySelectorAll('#icon-card');
+    let cardArray = Array.from(cards);
+    const cardContainers = document.querySelectorAll('.icon-card-container');
+    const cardContainerArray = Array.from(cardContainers);
 
-      for (let i = 0; i < cardArray.length; i++) {
-        entryArray[0].isIntersecting
-          ? (cardArray[i].className = 'icon-card active')
-          : (cardArray[i].className = 'icon-card');
-      }
+    console.log(cardArray);
+
+    const onIntersectionChange = (entryArray) => {
+      console.log(entryArray);
+      entryArray.forEach((entry) => {
+        if (entry.isIntersecting) return entry.target.classList.add('active');
+        else entry.target.classList.remove('active');
+      });
+    };
+    const observer = new IntersectionObserver(onIntersectionChange, {
+      threshold: 0.7,
+    });
+    for (let i = 0; i < cardArray.length; i++) {
+      observer.observe(cardArray[i]);
     }
-    const observer = new IntersectionObserver(showElem, { threshold: 0.8 });
-    observer.observe(document.querySelector('#icon-cards'));
   });
 
   return (
@@ -56,32 +62,40 @@ const About = () => {
       </section>
       <Container>
         <section className='icon-cards' id='icon-cards'>
-          <div className='icon-card'>
-            <Icon name='code' className='icon' size='big' circular />
-            <h2 className='card-header'>Web Development</h2>
+          <div className='icon-card-container'>
+            <div className='icon-card' id='icon-card'>
+              <Icon name='code' className='icon' size='big' circular />
+              <h2 className='card-header'>Web Development</h2>
 
-            <List className='list'>
-              <List.Item>HTML, CSS, Javascript, React</List.Item>
-              <List.Item>SCSS, Semantic-UI, Tailwind, Material-UI</List.Item>
-            </List>
+              <List className='list'>
+                <List.Item>HTML, CSS, Javascript, React</List.Item>
+                <List.Item>SCSS, Semantic-UI, Tailwind, Material-UI</List.Item>
+              </List>
+            </div>
           </div>
-          <div className='icon-card'>
-            <Icon name='paint brush' className='icon' size='big' circular />
-            <h2 className='card-header'>Web Design</h2>
-            <List className='list'>
-              <List.Item>Photoshop</List.Item>
-              <List.Item>Illustrator</List.Item>
-              <List.Item>GIMP</List.Item>
-              <List.Item>Figma</List.Item>
-            </List>
+
+          <div className='icon-card-container'>
+            <div className='icon-card' id='icon-card'>
+              <Icon name='paint brush' className='icon' size='big' circular />
+              <h2 className='card-header'>Web Design</h2>
+              <List className='list'>
+                <List.Item>Photoshop</List.Item>
+                <List.Item>Illustrator</List.Item>
+                <List.Item>GIMP</List.Item>
+                <List.Item>Figma</List.Item>
+              </List>
+            </div>
           </div>
-          <div className='icon-card'>
-            <Icon name='youtube play' className='icon' size='big' circular />
-            <h2 className='card-header'>Photo/Video Editing</h2>
-            <List>
-              <List.Item>Adobe Premier</List.Item>
-              <List.Item>Final Cut Pro</List.Item>
-            </List>
+
+          <div className='icon-card-container'>
+            <div className='icon-card' id='icon-card'>
+              <Icon name='youtube play' className='icon' size='big' circular />
+              <h2 className='card-header'>Photo/Video Editing</h2>
+              <List>
+                <List.Item>Adobe Premier</List.Item>
+                <List.Item>Final Cut Pro</List.Item>
+              </List>
+            </div>
           </div>
         </section>
       </Container>

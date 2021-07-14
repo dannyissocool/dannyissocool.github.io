@@ -10,7 +10,7 @@ const Projects = () => {
       <Container className='projects-container'>
         <h1 className='header'>Past Projects</h1>
         <ItemGroup divided className='projects'>
-          <Project />
+          <Project header='Pokedex' />
           <Project />
           <Project />
           <Project />
