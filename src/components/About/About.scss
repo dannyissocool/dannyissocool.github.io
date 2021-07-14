@@ -81,6 +81,7 @@
       background-color: rgba(0, 0, 0, 0.4);
       border-radius: 10px;
       transition: 0.3s all ease;
+      opacity: 0;
 
       h2 {
         color: white;
@@ -99,6 +100,10 @@
         color: white;
         border: 1px solid white;
       }
+    }
+
+    .icon-card.active {
+      opacity: 1;
     }
 
     .icon-card:hover {

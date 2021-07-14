@@ -88,7 +88,10 @@
     }
 
     .hero-image {
-      margin: 80px;
+      min-width: none;
+
+      max-width: 75% !important;
+      margin: 50px 80px;
     }
   }
 }

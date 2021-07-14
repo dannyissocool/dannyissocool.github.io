@@ -115,6 +115,7 @@
   border-radius: 10px;
   -webkit-transition: 0.3s all ease;
   transition: 0.3s all ease;
+  opacity: 0;
 }
 
 .about .icon-cards .icon-card h2 {
@@ -133,6 +134,10 @@
   margin: 0;
   color: white;
   border: 1px solid white;
+}
+
+.about .icon-cards .icon-card.active {
+  opacity: 1;
 }
 
 .about .icon-cards .icon-card:hover {
