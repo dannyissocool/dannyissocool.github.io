@@ -3,6 +3,8 @@ import './Projects.css';
 import { Container, ItemGroup } from 'semantic-ui-react';
 import PlaceholderFluid from '../PlaceholderFluid';
 import Project from './Project/Project';
+import pokedex from './Thumbnails/pokedex.jpg';
+import gameLibrary from './Thumbnails/gameLibrary.jpg';
 
 const Projects = () => {
   return (
@@ -10,8 +12,18 @@ const Projects = () => {
       <Container className='projects-container'>
         <h1 className='header'>Past Projects</h1>
         <ItemGroup divided className='projects'>
-          <Project header='Pokedex' />
-          <Project />
+          <Project
+            header='Pokedex'
+            desc='Basic pokedex using PokeAPI built with React and Tailwind-CSS'
+            repoLink='https://github.com/dannyissocool/react-pokedex'
+            imgSrc={pokedex}
+          />
+          <Project
+            header='Game Library'
+            desc='Game search library built with React/Semantic-UI-React and the RAWG API'
+            repoLink='https://github.com/dannyissocool/gameLibrary'
+            imgSrc={gameLibrary}
+          />
           <Project />
           <Project />
         </ItemGroup>

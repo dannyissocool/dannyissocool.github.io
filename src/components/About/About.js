@@ -11,9 +11,11 @@ const About = () => {
   useEffect(() => {
     function showElem(entryArray) {
       let bioContainer = document.querySelector('#bio-contents');
-      entryArray[0].isIntersecting
-        ? (bioContainer.className = 'bio-contents active')
-        : (bioContainer.className = 'bio-contents');
+
+      entryArray.forEach((entry) => {
+        if (entry.isIntersecting) return bioContainer.classList.add('active');
+        else bioContainer.classList.remove('active');
+      });
     }
     const observer = new IntersectionObserver(showElem, { threshold: 0.6 });
     observer.observe(document.querySelector('#bio'));
@@ -23,20 +25,15 @@ const About = () => {
   useEffect(() => {
     let cards = document.querySelectorAll('#icon-card');
     let cardArray = Array.from(cards);
-    const cardContainers = document.querySelectorAll('.icon-card-container');
-    const cardContainerArray = Array.from(cardContainers);
-
-    console.log(cardArray);
 
     const onIntersectionChange = (entryArray) => {
-      console.log(entryArray);
       entryArray.forEach((entry) => {
         if (entry.isIntersecting) return entry.target.classList.add('active');
         else entry.target.classList.remove('active');
       });
     };
     const observer = new IntersectionObserver(onIntersectionChange, {
-      threshold: 0.7,
+      threshold: 1.0,
     });
     for (let i = 0; i < cardArray.length; i++) {
       observer.observe(cardArray[i]);
@@ -48,7 +45,7 @@ const About = () => {
       <h1 className='header'>About Me</h1>
 
       <section className='biography' id='bio'>
-        <div id='bio-contents'>
+        <div id='bio-contents' className='bio-contents'>
           <img src={Img} className='image' />
 
           <p>

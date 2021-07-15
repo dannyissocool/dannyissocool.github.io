@@ -3,7 +3,7 @@ import './Project.css';
 import { Item, Image } from 'semantic-ui-react';
 
 const Project = ({
-  header = 'Header',
+  header = 'Placeholder',
   desc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum in obcaecati quam numquam natus, debitis ab est consectetur, officiis',
   imgSrc = 'https://react.semantic-ui.com/images/wireframe/image.png',
   repoLink = 'https://github.com/dannyissocool',
