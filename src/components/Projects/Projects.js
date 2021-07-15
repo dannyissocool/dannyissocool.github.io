@@ -16,12 +16,14 @@ const Projects = () => {
             header='Pokedex'
             desc='Basic pokedex using PokeAPI built with React and Tailwind-CSS'
             repoLink='https://github.com/dannyissocool/react-pokedex'
+            pagesLink='https://dannyissocool.github.io/react-pokedex/'
             imgSrc={pokedex}
           />
           <Project
             header='Game Library'
             desc='Game search library built with React/Semantic-UI-React and the RAWG API'
             repoLink='https://github.com/dannyissocool/gameLibrary'
+            pagesLink='http://dannyissocool.github.io/gameLibrary'
             imgSrc={gameLibrary}
           />
           <Project />
