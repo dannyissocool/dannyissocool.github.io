@@ -26,17 +26,7 @@ const Contact = () => {
             <Icon name='github' />
             Github
           </a>
-        </li>
-        <li>
-          <a
-            href='https://twitter.com/DannyMeuse'
-            rel='noreferrer'
-            target='_blank'
-          >
-            <Icon name='twitter' />
-            Twitter
-          </a>
-        </li>
+        </li>        
         <li>
           <a
             href='https://instagram.com/dmeuse/'
